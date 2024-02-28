@@ -1,43 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Shrikhand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Shrikhand&display=swap");
 
-body{
-    margin: 0;
-    padding: 0;
-    font-family: Outfit;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Outfit;
+  background-color: #fdf1f1;
 }
 
-.header{
-    grid-area: header;
-    background-color: #c29436;
+.header {
+  grid-area: header;
+  background-color: #c29436;
 }
 
-.header p{
-    text-align: center;
-    color: #ffffff;
-    font-family: Shrikhand;
-    font-size: 20px;
+.header h1 {
+  text-align: center;
+  color: #ffffff;
+  font-family: Shrikhand;
+  font-size: 25px;
 }
 
-.main{
-    grid-area: main;
+
+.main {
+  grid-area: main;
 }
 
-.aside{
-    grid-area: aside;
+
+
+
+
+
+
+
+
+.aside {
+  grid-area: aside;
 }
 
-.footer{
-    grid-area: footer;
+.aside .productos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 25px;
+  height: 100vh;
 }
 
-.grid-boxes{
-    display: grid;
-    grid-template-areas: 
-    "header header header header header header" 
-    "aside main main main main main" 
-    "footer footer footer footer footer footer";
+.aside .productos h3{
+    font-weight: 800;
+    color: #c29436;
+    font-size: 22px;
 }
 
-.grid-box{
-    border: 1px solid black;
+.aside .productos a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.aside .productos a:hover{
+    color: #c29436;
+}
+
+.aside .productos .p-cantidad {
+  display: flex;
+  align-items: center;
+  margin-bottom: -20px;
+}
+
+.aside .productos .p-cantidad p {
+  padding-left: 10px;
+  color: #c1c1c1;
+}
+
+.aside .productos .p-cantidad i{
+    margin-left: 10px;
+    color: #c29436;
+}
+
+.aside .productos .p-cantidad .icono-c{
+    margin-right: 10px;
+    color: #c29436;
+}
+
+.aside .productos .p-cantidad .icono-c:hover{
+    color: #7f6124;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+.footer {
+  grid-area: footer;
+}
+
+.grid-boxes {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header header header header header header header header header"
+    "aside main main main main main main main main main main main main main"
+    "footer footer footer footer footer footer footer footer footer footer footer footer footer footer";
+}
+
+.grid-box {
+  border: 1px solid black;
 }
