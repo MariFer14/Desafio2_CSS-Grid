@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Outfit:wght@100..900&display=swap");
 
 body {
   margin: 0;
@@ -15,14 +15,15 @@ body {
 .header h1 {
   text-align: center;
   color: #ffffff;
-  font-family: Shrikhand;
+  font-family: Berkshire Swash;
   font-size: 25px;
 }
 
-.container{
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+.container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto auto auto;
+  gap: 50px;
 }
 
 .main {
@@ -33,11 +34,15 @@ body {
 .main .productos {
   display: flex;
   flex-direction: column;
-  width: 270px;
+  width: 300px;
   background-color: #ffffff;
-  padding: auto;
+  padding-top: 10px;
   box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.2);
-  margin-bottom: 35px;
+}
+
+.main .productos .imagen {
+  display: flex;
+  justify-content: center;
 }
 
 .main .productos .descripcion {
@@ -48,17 +53,17 @@ body {
 }
 
 .main .productos img {
-  width: 270px;
+  width: 100%;
   height: 300px;
 }
 
 .main .productos .descripcion h4 {
-  font-size: 20px;
+  font-size: 22px;
   margin-bottom: -2px;
-  font-family: Shrikhand;
+  font-family: Berkshire Swash;
 }
 
-.main .productos .descripcion p{
+.main .productos .descripcion p {
   color: #7f7f7f;
   margin-bottom: 25px;
 }
@@ -72,24 +77,10 @@ body {
   color: #ffffff;
 }
 
-.main .productos .descripcion button:hover{
+.main .productos .descripcion button:hover {
   background-color: #7f6124;
   cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .aside {
   grid-area: aside;
@@ -100,6 +91,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   padding-left: 25px;
+  padding-right: 30px;
   height: 100vh;
 }
 
@@ -146,16 +138,36 @@ body {
 
 .footer {
   grid-area: footer;
+  background-color: #c29436;
+  margin-top: 30px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.footer-content p {
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.footer-content i {
+  margin-right: 8px;
 }
 
 .grid-boxes {
   display: grid;
   grid-template-areas:
     "header header header header header header header header header header header header header header"
-    "aside main main main main main main main main main main main main main"
+    "aside aside main main main main main main main main main main main main"
     "footer footer footer footer footer footer footer footer footer footer footer footer footer footer";
 }
 
 .grid-box {
-  border: 1px solid black;
+  border: 1px solid #ffeaea;
 }
