@@ -19,29 +19,69 @@ body {
   font-size: 25px;
 }
 
+.container{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
 
 .main {
   grid-area: main;
+  padding: 40px;
 }
 
 .main .productos {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid black;
-    width: 200px;
-
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  background-color: #ffffff;
+  padding: auto;
+  box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 35px;
 }
 
-.main .productos .descripcion{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.main .productos .descripcion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.main .productos img{
-    width: 200px;
+.main .productos img {
+  width: 270px;
+  height: 300px;
 }
+
+.main .productos .descripcion h4 {
+  font-size: 20px;
+  margin-bottom: -2px;
+  font-family: Shrikhand;
+}
+
+.main .productos .descripcion p{
+  color: #7f7f7f;
+  margin-bottom: 25px;
+}
+
+.main .productos .descripcion button {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  background-color: #c29436;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.main .productos .descripcion button:hover{
+  background-color: #7f6124;
+  cursor: pointer;
+}
+
+
+
+
+
+
 
 
 
@@ -63,10 +103,10 @@ body {
   height: 100vh;
 }
 
-.aside .productos-c h3{
-    font-weight: 800;
-    color: #c29436;
-    font-size: 22px;
+.aside .productos-c h3 {
+  font-weight: 800;
+  color: #c29436;
+  font-size: 22px;
 }
 
 .aside .productos-c a {
@@ -74,8 +114,8 @@ body {
   color: #000000;
 }
 
-.aside .productos-c a:hover{
-    color: #c29436;
+.aside .productos-c a:hover {
+  color: #c29436;
 }
 
 .aside .productos-c .p-cantidad {
@@ -89,27 +129,20 @@ body {
   color: #c1c1c1;
 }
 
-.aside .productos-c .p-cantidad i{
-    margin-left: 10px;
-    color: #c29436;
+.aside .productos-c .p-cantidad i {
+  margin-left: 10px;
+  color: #c29436;
 }
 
-.aside .productos-c .p-cantidad .icono-c{
-    margin-right: 10px;
-    color: #c29436;
+.aside .productos-c .p-cantidad .icono-c {
+  margin-right: 10px;
+  color: #c29436;
 }
 
-.aside .productos-c .p-cantidad .icono-c:hover{
-    color: #7f6124;
-    cursor: pointer;
+.aside .productos-c .p-cantidad .icono-c:hover {
+  color: #7f6124;
+  cursor: pointer;
 }
-
-
-
-
-
-
-
 
 .footer {
   grid-area: footer;
