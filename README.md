@@ -1,4 +1,4 @@
-# Desafio2_CSS-Grid
+# E-Commerce-Desafio2_CSS-Grid
 
 Este E-commerce es un trabajo de índole académico, del módulo CSS Avanzado en mi paso por la Academia Desafío Latam. 
 
